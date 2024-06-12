@@ -4,7 +4,7 @@
 <img src="imgs/arch.png" alt="drawing" width="300" />
 </p>
 
-This is the Python implementation belonging to the paper *Learning Exceptional Subgroups by End-to-End Maximizing KL-divergence*. The repository also includes the code required to 
+This is the Python implementation belonging to the paper [*Learning Exceptional Subgroups by End-to-End Maximizing KL-divergence*](https://arxiv.org/abs/2402.12930). The repository also includes the code required to 
 replicate the results from the paper e.g. the implementation of *Robust Subgroup Discovery*.
 We additionally provide a demo in a jupyter notebook to provide an easy starting point.
 
