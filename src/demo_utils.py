@@ -51,7 +51,7 @@ class SyflowConfig:
         self.temperature = 0.2
         self.bin_deviation = 0.2
         self.use_weights = True
-        self.seed = 0
+        self.seed = 10
         def flow_gen():
             #return bij.Compose([bij.Spline(count_bins=12), bij.Spline(count_bins=12)])
             return bij.Spline(count_bins=12)
