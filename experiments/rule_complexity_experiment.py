@@ -1,4 +1,10 @@
-from exp_utils import *
+import sys
+sys.path.append("../")
+
+from src import *
+from src.methods import *
+from src.demo_utils import setup_path, f1_score, csv
+
 np.set_printoptions(precision=3, suppress=True)
 
 parser = argparse.ArgumentParser()

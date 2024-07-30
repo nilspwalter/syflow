@@ -1,5 +1,9 @@
-from exp_utils import *
+import sys
+sys.path.append("../")
 
+from src import *
+from src.methods import *
+from src.demo_utils import setup_path, f1_score, csv
 parser = argparse.ArgumentParser()
 
 parser.add_argument("--method", type=str, default="syflow", help="method to run")

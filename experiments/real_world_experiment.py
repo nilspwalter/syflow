@@ -1,4 +1,9 @@
-from exp_utils import *
+import sys
+sys.path.append("../")
+
+from src import *
+from src.methods import *
+from src.demo_utils import setup_path, f1_score, csv, Path
 from src.utils.utils import load_data
 
 parser = argparse.ArgumentParser()
