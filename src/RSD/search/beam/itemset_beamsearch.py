@@ -34,7 +34,7 @@ def refine_subgroup(rulelist,data,candidate2refine,beam,subgroup2add):
                 new_candidate = candidate2refine + [item]
                 score, gain_data, gain_model = compute_delta_score(rulelist, new_candidate, new_subgroup_statistics, new_default_rule_statistics)
             else:
-                score = np.NINF
+                score = -np.inf
             if score > subgroup2add.score:
                 subgroup2add.update(new_candidate, new_subgroup_statistics, gain_data, gain_model, score)
             if score > beam.min_score and set([item.description for item in new_candidate]) not in beam.set_patterns:

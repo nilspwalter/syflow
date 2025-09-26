@@ -5,11 +5,11 @@ class Beam():
     def __init__(self, beam_width):
         self.beam_width = beam_width
         self.patterns = [[] for w in range(beam_width)]
-        self.array_score = np.full(beam_width, np.NINF)
+        self.array_score = np.full(beam_width, -np.inf)
         self.array_support = np.full(beam_width, np.inf)
         self.min_support_beam = np.inf
         self.set_patterns = [set() for w in range(beam_width)]
-        self.min_score = np.NINF
+        self.min_score = -np.inf
         self.min_index = 0
 
     def replace(self, new_pattern, new_score, usage):
@@ -26,8 +26,8 @@ class Beam():
     def clean(self):
         self.patterns = [[] for w in range(self.beam_width)]
         self.set_patterns = [set() for pat in self.patterns]
-        self.array_score = np.full(self.beam_width, np.NINF)
+        self.array_score = np.full(self.beam_width, -np.inf)
         self.array_support = np.full(self.beam_width, np.inf)
-        self.min_score = np.NINF
+        self.min_score = -np.inf
         self.min_index = 0
         return self

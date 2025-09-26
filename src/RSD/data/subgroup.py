@@ -42,9 +42,9 @@ class Subgroup():
     def __init__(self):
         self.pattern = []
         self.statistics = None
-        self.delta_data = np.NINF
-        self.delta_model = np.NINF
-        self.score = np.NINF
+        self.delta_data = -np.inf
+        self.delta_model = -np.inf
+        self.score = -np.inf
         self.usage = 0
         self.variable_list = []
         self.support = 0

@@ -108,12 +108,12 @@ def run_sd_mean(X,Y,config,alpha,n_subgroups,feature_names):
                 continue
             elif "<" in part:
                 var, high = part.split("<")
-                low = - np.infty
+                low = - np.inf
                 var = int(var[1:])
                 high = float(high)
             else:
                 var, low = part.split(">=")
-                high = np.infty
+                high = np.inf
                 var = int(var[1:])
                 low = float(low)
             conditions.append((var,low,high))
@@ -169,12 +169,12 @@ def run_sd_kl(X,Y,config,alpha,n_subgroups,feature_names):
                 continue
             elif "<" in part:
                 var, high = part.split("<")
-                low = - np.infty
+                low = - np.inf
                 var = int(var[1:])
                 high = float(high)
             else:
                 var, low = part.split(">=")
-                high = np.infty
+                high = np.inf
                 var = int(var[1:])
                 low = float(low)
             conditions.append((var,low,high))

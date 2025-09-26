@@ -130,7 +130,7 @@ class NumericAttribute(Attribute):
             # condition x<val
             index_down = np.where(self.values < value_quantile1)[0]
             description_down = self.name + " < " + str(value_quantile1)
-            self.items.append(create_item(index_down,variable_name= self.name, min_val=np.NINF, max_val=value_quantile1,
+            self.items.append(create_item(index_down,variable_name= self.name, min_val=-np.inf, max_val=value_quantile1,
                                           description = description_down,number_operations=1))
             self.cardinality_operator[1] += 1
             if self.n_cutpoints == 1: break # if there is only one unique value we only need one item

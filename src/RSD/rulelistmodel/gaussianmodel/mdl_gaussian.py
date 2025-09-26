@@ -6,7 +6,7 @@ Created on Wed Jan 15 18:09:04 2020
 """
 from ...mdl.mdl_base_codes import log2_gamma_half
 from ...rulelistmodel.gaussianmodel.gaussianstatistic import GaussianFreeStatistic, GaussianFixedStatistic
-from numpy import NINF,inf
+from numpy import inf
 
 from math import pi, log2
 
